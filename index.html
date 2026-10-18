@@ -13,46 +13,6 @@
     <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
     
-    <!-- Styling for Bottom-Left Row-Wise Social Icons -->
-    <style>
-        .bottom-left-socials {
-            position: fixed;
-            bottom: 25px;
-            left: 30px;
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-            z-index: 1000;
-        }
-        .bottom-left-socials a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 40px;
-            width: 40px;
-            background: var(--bg-black-900, #222222); /* Blends with your layout background */
-            border: 1px solid var(--skin-color, #ec1839);
-            color: var(--skin-color, #ec1839);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            font-size: 18px;
-            text-decoration: none;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        .bottom-left-socials a:hover {
-            background: var(--skin-color, #ec1839);
-            color: #ffffff;
-            transform: translateY(-5px);
-        }
-        
-        /* Ensures the sidebar or main content on narrow devices doesn't overlap perfectly */
-        @media (max-width: 1199px) {
-            .bottom-left-socials {
-                left: 20px;
-                bottom: 20px;
-            }
-        }
-    </style>
 </head>
 <body class="dark">
     <div class="main-container">
@@ -83,8 +43,8 @@
                             <h3 class="profession">I'm a <span class="typing">Web Developer</span></h3>
                             <p>I'm a web developer with extensive skills. My basic skills is to create websites , developing and much more...</p>
                             <div class="cv-upload-download">
-                                <a href="Resume.jpg" class="btn" id="cvViewBtn">View CV</a>
-                                <a href="Resume.jpg" class="btn" id="cvDownloadBtn" download>Download CV</a>
+                                <a href="Salman_Afridi_Resumes_page-0001.jpg" class="btn" id="cvViewBtn">View CV</a>
+                                <a href="Salman_Afridi_Resumes_page-0001.jpg" class="btn" id="cvDownloadBtn" download>Download CV</a>
                                 <span id="cvStatus" style="display:block; margin-top:10px; color: var(--text-black700); font-size: 14px;"></span>
                             </div>
                         </div>
@@ -170,23 +130,23 @@
                                     <h3 class="title">Projects</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
+                                            <div class="timeline shadow-dark projects-timeline" tabindex="0" aria-label="Projects list">
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-rocket"></i> Events page
                                                     </h3>
-                                                    <h4 class="timeline-title">Restaurant Website</h4>
+                                                    <h4 class="timeline-title">Restaurant Website using React</h4>
                                                     <p class="timeline-text">Order foods , Book slots , etc .</p>
                                                 </div>
 
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-mobile-alt"></i> Web page
+                                                        <i class="fa fa-rocket"></i> Web page
                                                     </h3>
-                                                    <h4 class="timeline-title">Web page for Womens safety SOS System</h4>
-                                                    <p class="timeline-text">Track locations , Alert SOS , etc .</p>
+                                                    <h4 class="timeline-title">Smart travel website using React</h4>
+                                                    <p class="timeline-text">Make travel plan based on user's Mood.</p>
                                                 </div>
 
                                                 <div class="timeline-item">
@@ -194,7 +154,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-code"></i> Web page
                                                     </h3>
-                                                    <h4 class="timeline-title">WMS Website</h4>
+                                                    <h4 class="timeline-title">WMS Website using React</h4>
                                                     <p class="timeline-text">Track goods location , Ai assistant for database managing . </p>
                                                 </div>
                                             </div>
@@ -209,7 +169,7 @@
                                     <h3 class="title">Certifications</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15" style="flex: 0 0 100%; max-width: 100%;">
-                                            <div class="timeline shadow-dark">
+                                            <div class="timeline shadow-dark cert-timeline" tabindex="0" aria-label="Certifications list">
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
@@ -336,51 +296,53 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="https://i.postimg.cc/NGkQB1Y0/portfolio-1.jpg" alt="portfolio image">
+                    <div class="portfolio-scroll-container" tabindex="0" aria-label="Portfolio projects list">
+                        <div class="row">
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.postimg.cc/NGkQB1Y0/portfolio-1.jpg" alt="portfolio image">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="https://i.postimg.cc/ydg49Z3w/portfolio-2.jpg" alt="portfolio image">
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.postimg.cc/ydg49Z3w/portfolio-2.jpg" alt="portfolio image">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="https://i.postimg.cc/RVPdrbDL/portfolio-3.jpg" alt="portfolio image">
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.postimg.cc/RVPdrbDL/portfolio-3.jpg" alt="portfolio image">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="https://i.postimg.cc/25dBY15N/portfolio-4.jpg" alt="portfolio image">
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.postimg.cc/25dBY15N/portfolio-4.jpg" alt="portfolio image">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="https://i.postimg.cc/RZBHD1ML/portfolio-5.jpg" alt="portfolio image">
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.postimg.cc/RZBHD1ML/portfolio-5.jpg" alt="portfolio image">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="https://i.postimg.cc/3wP7t1hK/portfolio-6.jpg" alt="portfolio image">
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="https://i.postimg.cc/3wP7t1hK/portfolio-6.jpg" alt="portfolio image">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -520,11 +482,11 @@
             }
 
             viewBtn?.addEventListener('click', () => {
-                setStatus('Opening Resume.jpg');
+                setStatus('Opening Resume');
             });
 
             downloadBtn?.addEventListener('click', () => {
-                setStatus('Downloading Resume.jpg');
+                setStatus('Downloading Resume');
             });
 
             // Status trigger handlers for the specific certification buttons
